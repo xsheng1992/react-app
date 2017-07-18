@@ -25,7 +25,7 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        loader: ExtractTextPlugin.extract({fallback: 'style', use: 'css?modules!postcss'})
+        loader: "style-loader!css-loader?modules"
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
